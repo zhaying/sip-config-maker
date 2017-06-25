@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="US-ASCII" ?>
+<VoIPProfileSigned xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespacelocation="VoIPProfile.xsd"
+  xmlns="http://aur.alcatel.com/VoIPSchema"
+  xmlns:vp="http://aur.alcatel.com/VoIPSchema"
+>
+
+
+<VoIPProfile>
+<ProfileFormat>1</ProfileFormat>
+<VoIPGeneric>
+<VoiceProtocolCompatibility>H248</VoiceProtocolCompatibility>
+  <PolarityFeed>TIP_RING_POSITIVE</PolarityFeed>
+  <GlarePriority>ORIGINATING</GlarePriority>
+  <RingPolarity>SYMMETRIC_RINGING</RingPolarity>
+  <CallWtgDelay>10</CallWtgDelay>
+  <RingingCadences> 
+  <RingCadence>
+  
+    <CadenceID> 11 </CadenceID>
+    <CadenceRepeat> 0 </CadenceRepeat>
+    <CadenceComponent>
+      <CadenceComponentOn> 500 </CadenceComponentOn>
+      <CadenceComponentOff> 500 </CadenceComponentOff>
+    </CadenceComponent>
+    <CadenceComponent>
+      <CadenceComponentOn> 500 </CadenceComponentOn>
+      <CadenceComponentOff> 500 </CadenceComponentOff>
+    </CadenceComponent>
+    <CadenceComponent>
+      <CadenceComponentOn> 500 </CadenceComponentOn>
+      <CadenceComponentOff> 500 </CadenceComponentOff>
+    </CadenceComponent>
+    <CadenceComponent>
+      <CadenceComponentOn> 500 </CadenceComponentOn>
+      <CadenceComponentOff> 2500 </CadenceComponentOff>
+    </CadenceComponent>
+  </RingCadence>
+  </RingingCadences>
+
+  <RingSplash> 0 </RingSplash>
+  <EchoCancellationNear> 16 </EchoCancellationNear>
+  <EchoCancellationFar> 0 </EchoCancellationFar>
+  <Companding>MU_LAW</Companding>
+  <CallerIDFormat>GR_30</CallerIDFormat>
+  <DTMFDetectMin> 40 </DTMFDetectMin>
+  <DTMFDetectMax> 0 </DTMFDetectMax>
+
+  <DTMFUpstreamDuration> 50 </DTMFUpstreamDuration>
+  <DTMFUpstreamHighLevel> -7 </DTMFUpstreamHighLevel>
+  <DTMFUpstreamLowLevel> -7 </DTMFUpstreamLowLevel>
+  <PulseToDTMFConversion> true </PulseToDTMFConversion>
+  <PulseBreakMin> 30 </PulseBreakMin>
+  <PulseBreakMax> 70 </PulseBreakMax>
+  <PulseMakeMin> 30 </PulseMakeMin>
+  <PulseMakeMax> 70 </PulseMakeMax>
+  <PulseInterDigitMin> 75 </PulseInterDigitMin>
+  <FlashHookMin> 200 </FlashHookMin>
+  <FlashHookMax> 1100 </FlashHookMax>
+  <OnHookMin> 1100 </OnHookMin>
+  <OffHookMin> 200 </OffHookMin>
+
+<NetworkToneSpecs> 
+<NetworkToneSpec>
+  <NetworkToneID>DialT</NetworkToneID>
+  <ToneDirection>Subscriber</ToneDirection>
+  <ToneRepeatCount> 0 </ToneRepeatCount>
+  <ToneComponent>
+    <ToneComponentRepeat> 0 </ToneComponentRepeat>
+    <ToneSoundDuration> 0 </ToneSoundDuration> 
+    <ToneSilenceDuration> 0 </ToneSilenceDuration> 
+    <ToneFrequencyComponent>
+      <ToneFrequency> 350 </ToneFrequency>
+      <TonePowerLevel> -13 </TonePowerLevel>
+    </ToneFrequencyComponent>
+    <ToneFrequencyComponent>
+      <ToneFrequency> 440 </ToneFrequency>
+      <TonePowerLevel> -14 </TonePowerLevel>
+    </ToneFrequencyComponent>
+  </ToneComponent>
+</NetworkToneSpec>
+<NetworkToneSpec>
+  <NetworkToneID>SLAC_TONE_HOWLER</NetworkToneID>
+  <ToneDirection>Subscriber</ToneDirection>
+  <ToneRepeatCount> 0 </ToneRepeatCount>
+  <ToneComponent>
+    <ToneComponentRepeat> 0 </ToneComponentRepeat>
+    <ToneSoundDuration> 100 </ToneSoundDuration> 
+    <ToneSilenceDuration> 100 </ToneSilenceDuration> 
+    <ToneFrequencyComponent>
+      <ToneFrequency> 1400 </ToneFrequency>
+      <TonePowerLevel> -2 </TonePowerLevel>
+    </ToneFrequencyComponent>
+    <ToneFrequencyComponent>
+      <ToneFrequency> 2060 </ToneFrequency>
+      <TonePowerLevel> -2 </TonePowerLevel>
+    </ToneFrequencyComponent>
+    <ToneFrequencyComponent>
+      <ToneFrequency> 2450 </ToneFrequency>
+      <TonePowerLevel> -2 </TonePowerLevel>
+    </ToneFrequencyComponent>
+    <ToneFrequencyComponent>
+      <ToneFrequency> 2600 </ToneFrequency>
+      <TonePowerLevel> -2 </TonePowerLevel>
+    </ToneFrequencyComponent>
+  </ToneComponent>
+</NetworkToneSpec>
+  <NetworkToneID>PayphoneRecognitionTone</NetworkToneID>
+  <ToneDirection>Network</ToneDirection>
+  <ToneRepeatCount> 0 </ToneRepeatCount>
+  <ToneComponent>
+    <ToneComponentRepeat> 1 </ToneComponentRepeat>
+    <ToneSoundDuration> 200 </ToneSoundDuration> 
+    <ToneSilenceDuration> 200 </ToneSilenceDuration> 
+    <ToneFrequencyComponent>
+      <ToneFrequency> 1425 </ToneFrequency>
+      <TonePowerLevel> -20 </TonePowerLevel>
+    </ToneFrequencyComponent>
+  </ToneComponent>
+  <ToneComponent>
+    <ToneComponentRepeat> 1 </ToneComponentRepeat>
+    <ToneSoundDuration> 200 </ToneSoundDuration> 
+    <ToneSilenceDuration> 2000 </ToneSilenceDuration> 
+    <ToneFrequencyComponent>
+      <ToneFrequency> 1100 </ToneFrequency>
+      <TonePowerLevel> -20 </TonePowerLevel>
+    </ToneFrequencyComponent>
+  </ToneComponent>
+</NetworkToneSpec>
+</NetworkToneSpecs>
+
+</VoIPGeneric>
+
+<ClientSpecific>
+
+<VoIPClientID >1</VoIPClientID>
+<MiscDataSet>
+
+<SNTPEnable></SNTPEnable>
+<TimeZoneOffset></TimeZoneOffset>
+</MiscDataSet>
+
+<SIPProtocolDataSet>
+
+<RegistrarURI >sip:xxxxxxxxxx@[sip_server_template]</RegistrarURI>
+<RegistrarRoute >[outbound_proxy_template]</RegistrarRoute>
+<OutboundProxy >[outbound_proxy_template]</OutboundProxy>
+<TransportProtocol >
+<name >UDP</name>
+<port >5060</port></TransportProtocol>
+<register_period >3600</register_period>
+<register_head_start >60</register_head_start>
+<register_retry_interval >60</register_retry_interval>
+<sip_dscp ></sip_dscp>
+<subscribe_period >3600</subscribe_period>
+<subscribe_head_start >60</subscribe_head_start>
+<sip_timer_t1 >500</sip_timer_t1>
+<sip_timer_t2 >4</sip_timer_t2>
+<sip_invite_timeout >32</sip_invite_timeout>
+<sip_noninvite_timeout >32</sip_noninvite_timeout>
+<peer_codec_commit >Always (for FTP mode)</peer_codec_commit>
+<add_route_header >True</add_route_header>
+</SIPProtocolDataSet>
+
+<MediaDataSet>
+
+<codec >Audio/PCMU</codec>
+<qos-dscp >24</qos-dscp>
+<local-ports >5004-6003</local-ports>
+<enable_t38 >True</enable_t38>
+<enable_rfc2833 >True</enable_rfc2833>
+<enable_vad >False</enable_vad>
+<packetization_interval >20</packetization_interval>
+<default_packetization_interval >10</default_packetization_interval>
+<enable_info_based_dtmf >True</enable_info_based_dtmf>
+<content_type_for_info >application/broadsoft</content_type_for_info>
+<annexb_in_sdp >False</annexb_in_sdp>
+<ptime_symmetric >No Symmetry</ptime_symmetric>
+</MediaDataSet>
+
+</ClientSpecific>
+
+<SubscriberData>
+
+<UNIID >100</UNIID>
+<IdentityDataSet>
+
+<AddressOfRecord >sip:[username_template]@[sip_server_template]</AddressOfRecord>
+<Realm >[sip_server_template]</Realm>
+<username >[username_template]</username>
+<Password >[password_template]</Password>
+<ContactURIUser >[username_template]</ContactURIUser>
+</IdentityDataSet>
+
+<AnalogPortDataSet>
+
+<PermanentTimer>16</PermanentTimer>
+
+<InterDigitTimer>16</InterDigitTimer>
+
+<CriticalTimer>4</CriticalTimer>
+
+<TimedReleaseTimer>10</TimedReleaseTimer>
+
+<EnterKey>#</EnterKey>
+
+</AnalogPortDataSet>
+
+<ServicesDataSet>
+
+<add_media_level_cline >False</add_media_level_cline>
+<direction_in_hold_req></direction_in_hold_req>
+<etsi_ch_release_earliest >R0</etsi_ch_release_earliest>
+<etsi_3wc_release_earliest >R0</etsi_3wc_release_earliest>
+<etsi_3wc_release_latest >R0</etsi_3wc_release_latest>
+<etsi_ch_release_latest >R0</etsi_ch_release_latest>
+<enable_3wc_focus >False</enable_3wc_focus>
+<enable_service_in_remote_hold >True</enable_service_in_remote_hold>
+<DigitMap >( ( * | 11 ) ( 70 ) ) S I# ? ( ( * | 11 ) ( 52 ) ) S I# ? ( ( * | 11 ) ( 88 ) ) R I# ? ( 101xxxx ) ? ( ( * | 11 ) ( 72 | 9[02] ) ) ? ( ( * | 11 ) ( 67 | 82 ) ) ? ( ( ( * | 11 ) ( 3xx | 57 | 6[01359] | 7[3789] | 74x{11} | 75x{12} | 8[013579] | 9[13] ) ) | ( ( * | 11 ) ( [2]xx | [014]x | 5[01345689] | 6[246] | 7[16] | 8[46] | 9[456789] ) ) S I# | ( 0T | 00 | 011?[2-9]x{0,14}T | [01] ( [2-8] 11 | (911)E | [2-9] ( [^1]x{8} | 1[^1] x{7}) ) | [2-8] 11 | (911)E | [2-9] ( [^1]x{5}T | 1[^1] x{4}T | [^1]x{8} | 1[^1] x{7}) | [2-9] [^1]?T ) )</DigitMap>
+<OutboundURIPrefix >sip:</OutboundURIPrefix>
+<OutboundURISuffix ></OutboundURISuffix>
+<DirectConnectURI ></DirectConnectURI>
+<enable_forced_hold >False</enable_forced_hold>
+<message_waiting_mode >Dial-Tone Visual</message_waiting_mode>
+<vmwi_refresh_interval >30</vmwi_refresh_interval>
+<vmwi_abbreviated_ring >False</vmwi_abbreviated_ring>
+<mwi_reminder_burst >500</mwi_reminder_burst>
+<mwi_reminder_interval >15</mwi_reminder_interval>
+<service_code_ccw >*70 1170</service_code_ccw>
+<service_code_hold >*52 1152</service_code_hold>
+<intercom_code_1 >*53 1153</intercom_code_1>
+<intercom_code_2 >*54 1154</intercom_code_2>
+<enable_cw >True</enable_cw>
+<enable_3wc >True</enable_3wc>
+<enable_transfer >False</enable_transfer>
+<enable_hold >False</enable_hold>
+<message_event_uri ></message_event_uri>
+<cfwd_state >False</cfwd_state>
+<cfwd_reminder >False</cfwd_reminder>
+<cfwd_event_uri ></cfwd_event_uri>
+<obsolete_hold >True</obsolete_hold>
+<session_timer_min >90</session_timer_min>
+<session_timer_max >1800</session_timer_max>
+<session_timer_refresher >uas</session_timer_refresher>
+<service_code_6wc >*41 1141</service_code_6wc>
+<service_code_rls >*43 1143</service_code_rls>
+<supp_ring_offhook_timer >5</supp_ring_offhook_timer>
+<supp_ring_interrupt_timer >2</supp_ring_interrupt_timer>
+<conference_uri ></conference_uri>
+<bridged_line_uri></bridged_line_uri>
+<bridged_line_dialog_uri></bridged_line_dialog_uri>
+<enable_6wc >False</enable_6wc>
+<enable_supp_ring >False</enable_supp_ring>
+<cid_allows_from_hdr></cid_allows_from_hdr>
+<enable_caller_id >True</enable_caller_id>
+<allow_unmatched_notify >False</allow_unmatched_notify>
+<rfc2833_symmetric >No</rfc2833_symmetric>
+<enable_dead_line_tone >False</enable_dead_line_tone>
+<service_code_enable_warm></service_code_enable_warm>
+<service_code_disable_warm></service_code_disable_warm>
+<dynamic_codec_payload_map_entry></dynamic_codec_payload_map_entry>
+<obsolete_stale >False</obsolete_stale>
+<thin_client_HF_method >info</thin_client_HF_method>
+<thin_client_HF_request_user></thin_client_HF_request_user>
+<cfwd_implicit >False</cfwd_implicit>
+<session_timer_method >invite</session_timer_method>
+<enable_warmline >No</enable_warmline>
+<enable_polarity_reversal >False</enable_polarity_reversal>
+<enable_calling_name_id >True</enable_calling_name_id>
+<callerid_uri_preference >first</callerid_uri_preference>
+<enable_etsi >True</enable_etsi>
+<etsi_ch_release >R0</etsi_ch_release>
+<etsi_ch_toggle >R0</etsi_ch_toggle>
+<etsi_ch_merge >R0</etsi_ch_merge>
+<etsi_3wc_split >R0</etsi_3wc_split>
+<etsi_cw_release >R0</etsi_cw_release>
+<etsi_cw_toggle >R0</etsi_cw_toggle>
+<etsi_cw_merge >R0</etsi_cw_merge>
+<cw_alert_timer >0</cw_alert_timer>
+<prefer_early_media >False</prefer_early_media>
+<osi_timer >900</osi_timer>
+</ServicesDataSet>
+
+</SubscriberData>
+
+</VoIPProfile>
+
+<VoIPProfileSignature>00000000000000000000000000000000</VoIPProfileSignature>
+
+</VoIPProfileSigned>
